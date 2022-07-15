@@ -1,0 +1,32 @@
+[
+    {
+        "id": 120005678,
+        "firstName": "Souvik",
+        "lastName": "Chakraborty",
+        "department": "Digital Solutions"
+    },
+    {
+        "id": 120005679,
+        "firstName": "Naveen",
+        "lastName": "Pandit",
+        "department": "Tech Support"
+    },
+    {
+        "id": 120005680,
+        "firstName": "Naman",
+        "lastName": "Aggarwal",
+        "department": "Finance"
+    },
+    {
+        "id": 120005681,
+        "firstName": "Sonam",
+        "lastName": "Chauhan",
+        "department": "Human Resources"
+    },
+    {
+        "id": 120005682,
+        "firstName": "Suparna",
+        "lastName": "Chakraborty",
+        "department": "Admin"
+    }
+]

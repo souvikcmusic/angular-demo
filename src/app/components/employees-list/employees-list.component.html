@@ -1,0 +1,35 @@
+<div class="table" *ngIf="employeesList.length > 0">
+    <div class="header">
+        <div class="cell">ID</div>
+        <div class="cell">First Name</div>
+        <div class="cell">Last Name</div>
+        <div class="cell">Department</div>
+    </div>
+    <ng-container *ngFor="let employee of employeesList">
+        <app-employee [employee]="employee">
+        </app-employee>
+    </ng-container>
+</div>
+
+<div class="form">
+    <h2> Add New Employee </h2>
+    <label class="error" *ngIf="errorMessage">{{errorMessage}}</label>
+    <div class="height--xl">    
+        <input placeholder="Enter ID" pattern= "[0-9]" type="text" [(ngModel)]="newEmployee.id"/>
+    </div>
+    <div class="height--xl">    
+        <input placeholder="Enter Firstname" type="text" [(ngModel)]="newEmployee.firstName"/>
+    </div>
+    <div class="height--xl">
+        <input placeholder="Enter Lastname" type="text" [(ngModel)]="newEmployee.lastName"/>
+    </div>
+    <div class="height--xl">
+        <select placeholder="Select Detpartment" [(ngModel)]="newEmployee.department">
+            <ng-container *ngFor="let department of departmentEnum | keyvalue">
+                <option value="{{department.value}}"> {{department.value}} </option>
+            </ng-container>
+        </select>
+    </div>    
+    <button class="height--xl" (click)="addEmployee()"> Add </button>
+
+</div>

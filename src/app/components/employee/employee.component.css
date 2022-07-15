@@ -1,0 +1,19 @@
+.table {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    width: 50em;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 50rem;
+}
+.cell {
+    display:table-cell;
+    width:25%;
+}
